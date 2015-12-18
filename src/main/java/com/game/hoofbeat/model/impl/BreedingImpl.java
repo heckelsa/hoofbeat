@@ -6,7 +6,7 @@ import java.util.Random;
 
 public class BreedingImpl implements Breeding {
 
-    public void newFoal(GenImpl mutterGen, GenImpl vaterGen){
+    public String createFoalAndReturnColor(GenImpl mutterGen, GenImpl vaterGen){
         // Gene des Fohlens generieren
         String foal_genAgouti = newGen(mutterGen.getGen_agouti(), vaterGen.getGen_agouti());
         String foal_genBlack = newGen(mutterGen.getGen_black(), vaterGen.getGen_black());
@@ -15,7 +15,7 @@ public class BreedingImpl implements Breeding {
         String foal_genDun = newGen(mutterGen.getGen_dun(), vaterGen.getGen_dun());
         String foal_genRoan = newGen(mutterGen.getGen_roan(), vaterGen.getGen_roan());
 
-        // Alle Gene zu einem String zusammenfügen
+        // Alle Gene zu einem String zusammenfï¿½gen
         StringBuffer foalGen = new StringBuffer();
         foalGen.append(foal_genAgouti);
         foalGen.append(foal_genBlack);
@@ -25,7 +25,7 @@ public class BreedingImpl implements Breeding {
         ColorImpl farbeFoal = new ColorImpl();
         String foalColor = farbeFoal.getBaseColor(foalGenString);
 
-        System.out.println(foalColor);
+        return foalColor; 
     }
 
     /**

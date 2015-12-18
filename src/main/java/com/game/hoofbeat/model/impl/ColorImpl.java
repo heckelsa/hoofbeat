@@ -60,7 +60,8 @@ public class ColorImpl implements Color {
 
                     String baseGenCode = allBaseColors[i][1][k];
                     if(baseGenCode.equals(genCode)){
-                        foalColor =  allBaseColors[i][0][k];
+                        //foalColor =  allBaseColors[i][0][k];
+                    	foalColor = "Rappe";
                         break;
                     }
 

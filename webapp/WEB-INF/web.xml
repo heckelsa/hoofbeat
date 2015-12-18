@@ -11,16 +11,18 @@
   </welcome-file-list>
 
     <servlet>
-        <servlet-name>crunchify</servlet-name>
+        <servlet-name>horse</servlet-name>
         <servlet-class>
             org.springframework.web.servlet.DispatcherServlet
         </servlet-class>
         <load-on-startup>1</load-on-startup>
     </servlet>
+
+    
     <servlet-mapping>
-        <servlet-name>crunchify</servlet-name>
-        <url-pattern>/welcome.jsp</url-pattern>
-        <url-pattern>/welcome.html</url-pattern>
+        <servlet-name>horse</servlet-name>
+        <url-pattern>/horse.jsp</url-pattern>
+        <url-pattern>/horse.html</url-pattern>
         <url-pattern>*.html</url-pattern>
     </servlet-mapping>
 </web-app>

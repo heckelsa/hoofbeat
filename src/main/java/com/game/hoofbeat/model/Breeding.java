@@ -4,6 +4,6 @@ import com.game.hoofbeat.model.impl.GenImpl;
 
 public interface Breeding {
 
-    public void newFoal(GenImpl mutterGen, GenImpl vaterGen);
+    public String createFoalAndReturnColor(GenImpl mutterGen, GenImpl vaterGen);
 
 }
